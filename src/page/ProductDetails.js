@@ -15,6 +15,11 @@ export default function ProductDetails() {
   const product = useSelector((state) => state.product);
 
   useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
     if (id && id !== "") {
       dispatch(fetchProduct(id));
       return () => {

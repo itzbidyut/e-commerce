@@ -10,6 +10,69 @@ a {
   justify-content: center;
   align-items: center;
 }
+.homePage {
+  margin-top: 70px;
+  margin-bottom: 200px;
+  .banner {
+    height: 600px;
+    background-image: url("../public/images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+  .hero {
+    margin-top: 200px;
+    h1 {
+      color: #183661;
+      font-size: 100px;
+      margin-bottom: 40px;
+    }
+    h4 {
+      color: #2a2a2c;
+      font-size: 32px;
+    }
+  }
+  .banner-hero {
+  }
+}
+.catergory {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 70px;
+  .catergoryItem {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .iconBox {
+      display: flex;
+      justify-content: center;
+
+      margin-bottom: 20px;
+      img {
+        width: 100px;
+        border: 1px solid #183661;
+        border-radius: 50%;
+        height: 100px;
+        overflow: hidden;
+      }
+    }
+    .catname {
+      font-size: 23px;
+      text-align: center;
+    }
+  }
+}
+.cat_title {
+  font-size: 48px;
+  text-align: center;
+  padding: 80px 0px;
+  color: #183661;
+}
 .Header {
   position: fixed;
   top: 0px;
@@ -25,6 +88,9 @@ a {
   a {
     color: black;
   }
+}
+.homeContainer .row {
+  justify-content: center;
 }
 
 .productCard {
@@ -96,4 +162,25 @@ a {
 
 .cartPage {
   padding-top: 100px;
+}
+.footer {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #2a2a2c;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.d_flex {
+  display: flex;
+  align-items: center;
+  p {
+    margin-bottom: 0px;
+    margin-left: 50px;
+    &:hover {
+      font-weight: 600;
+      text-decoration: underline !important;
+      color: #183661;
+    }
+  }
 }

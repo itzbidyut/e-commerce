@@ -4,9 +4,12 @@ export default function Header() {
   return (
     <div className="Header">
       <div className="container">
-        <div>
+        <div className="d_flex">
           <Link to="/">
-            <h2 className="py-3">My Store</h2>
+            <h2 className="py-3">My Trands </h2>
+          </Link>
+          <Link to="/product">
+            <p className="py-3">All Products</p>
           </Link>
         </div>
         <div>
